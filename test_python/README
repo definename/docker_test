@@ -2,9 +2,10 @@
 sudo usermod -a -G <groupname> <username>
 # restart the system
 
-# build docker
+# build docker image from dockerfile
 docker build -t test_docker .
 docker save test_docker > test_docker.tar
 docker load -i ./test_docker.tar
 docker images
+# run docker container
 docker run -it test_docker
