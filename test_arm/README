@@ -7,3 +7,6 @@ docker buildx imagetools inspect definename/test_multiarch
 docker pull definename/test_multiarch:latest
 # pull architecture you want
 docker pull definename/test_multiarch:latest@sha256:9bf1c53a6f3203416c49f83bb2f9d3d720d2e348fd93042fc2a1a0c75fe5f3bb
+
+# how to
+https://www.docker.com/blog/getting-started-with-docker-for-arm-on-linux/
