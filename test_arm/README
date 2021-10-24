@@ -1,3 +1,5 @@
+# build image for arm with buildx
+
 # login to docker hub
 docker login
 # after success build images will be pushed to docker hub
