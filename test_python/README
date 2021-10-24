@@ -1,0 +1,10 @@
+# add user to docker group
+sudo usermod -a -G <groupname> <username>
+# restart the system
+
+# build docker
+docker build -t test_docker .
+docker save test_docker > test_docker.tar
+docker load -i ./test_docker.tar
+docker images
+docker run -it test_docker
