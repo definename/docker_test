@@ -1,7 +1,9 @@
+# login to docker hub
 docker login
+# after success build images will be pushed to docker hub
 docker buildx build --platform linux/arm64/v8,linux/amd64 -t definename/test_multiarch:latest . --push
 docker buildx imagetools inspect definename/test_multiarch
-# host computer architecture will be pulled:
+# host computer architecture will be pulled
 docker pull definename/test_multiarch:latest
 # pull architecture you want
 docker pull definename/test_multiarch:latest@sha256:9bf1c53a6f3203416c49f83bb2f9d3d720d2e348fd93042fc2a1a0c75fe5f3bb
